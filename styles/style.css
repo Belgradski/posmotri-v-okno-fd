@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -42,12 +42,12 @@ ol {
 
 .visually-hidden {
   clip: rect(0 0 0 0);
-clip-path: inset(50%);
+  clip-path: inset(50%);
   width: 1px;
-height: 1px;
-overflow: hidden;
-position: absolute;
-white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
 
 .content {
@@ -58,19 +58,16 @@ white-space: nowrap;
   gap: 30px;
   place-items: end;
   inline-size: 1140px;
-
 }
 
 .content__details {
   width: 100%;
-  
 }
 
 .result {
   grid-area: result;
-align-self: flex-end;
-width: 100%;
-
+  align-self: flex-end;
+  width: 100%;
 }
 
 .result__video-container {
@@ -94,18 +91,16 @@ width: 100%;
 .search-form__label {
   display: flex;
   width: 100%;
-  font-family: 'Fira Sans Condensed', 'Sans-serif';
+  font-family: "Fira Sans Condensed", "Sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   background-color: transparent;
-  
-
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', 'Sans-serif';
+  font-family: "Fira Sans Condensed", "Sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -122,10 +117,10 @@ width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: '';
+  content: "";
   display: block;
   width: 15px;
   height: 15px;
@@ -145,7 +140,7 @@ width: 100%;
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;;
+  gap: 15px;
 }
 
 .search-form__fieldset {
@@ -154,7 +149,7 @@ width: 100%;
 }
 
 .search-form__checkbox-list {
-  margin-top: 5px; 
+  margin-top: 5px;
 }
 
 .search-form__textfield {
@@ -169,11 +164,11 @@ width: 100%;
 
 .search-form__textfield:active {
   border-right: 1px solid #fff;
-  border-left: 1px solid #fff; 
-}  
+  border-left: 1px solid #fff;
+}
 
 .search-form__textfield::placeholder {
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-form__textfield:focus {
@@ -190,7 +185,7 @@ width: 100%;
 }
 
 .button {
-  font-family: 'Fira Sans Condensed', 'Sans-serif';
+  font-family: "Fira Sans Condensed", "Sans-serif";
   font-style: normal;
   font-size: 18px;
   font-weight: 700;
@@ -226,12 +221,11 @@ button:focus-visible {
 }
 
 .title {
-  font-family: 'Oswald', 'san-serif';
+  font-family: "Oswald", "san-serif";
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  
   margin-bottom: 25px;
 }
 
@@ -251,11 +245,11 @@ button:focus-visible {
 }
 
 .content__list-item {
-  padding: 3px 3px ;
+  padding: 3px 3px;
 }
 
 .content__list:not(last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .content__list-container {
@@ -271,16 +265,11 @@ button:focus-visible {
 
 .content__list-item:active {
   background-color: #545050;
-
 }
 
 .content__card-link:focus:not(:focus-visible) {
   outline: none;
 }
-
-/* .content__card-link_current {
-  outline: 1px solid #fff;
-} */
 
 .content__list-item:not(:last-child) {
   margin-bottom: 32px;
@@ -306,8 +295,8 @@ button:focus-visible {
 }
 
 .content__video-card-title {
-  display:block;
-  font-family: 'Oswald', 'san-serif';
+  display: block;
+  font-family: "Oswald", "san-serif";
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
@@ -316,19 +305,17 @@ button:focus-visible {
   color: #fff;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
 }
 
-
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed', 'san-serif';
+  font-family: "Fira Sans Condensed", "san-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
   color: #fff;
   text-decoration: none;
-
 }
 
 .more-button {
@@ -336,7 +323,6 @@ button:focus-visible {
   height: 34px;
   padding-bottom: 1px;
 }
-
 
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
@@ -348,5 +334,5 @@ button:focus-visible {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
