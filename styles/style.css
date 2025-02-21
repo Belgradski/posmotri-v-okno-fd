@@ -240,16 +240,12 @@ button:focus-visible {
   color: #545050;
 }
 
-.content__list {
-  padding-right: px;
-}
-
 .content__list-item {
   padding: 3px 3px;
 }
 
-.content__list:not(last-child) {
-  margin-bottom: 25px;
+.content__list:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .content__list-container {
@@ -272,7 +268,7 @@ button:focus-visible {
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 }
 
 .content__video-card {
@@ -316,6 +312,7 @@ button:focus-visible {
   line-height: 16px;
   color: #fff;
   text-decoration: none;
+  padding-top: 6px;
 }
 
 .more-button {
