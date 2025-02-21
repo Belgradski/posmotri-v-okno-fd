@@ -76,6 +76,7 @@ width: 100%;
 .result__video-container {
   width: 100%;
   padding-bottom: 15px;
+  position: relative;
 }
 
 .result__video {
@@ -87,7 +88,7 @@ width: 100%;
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .search-form__label {
@@ -117,7 +118,29 @@ width: 100%;
   height: 19px;
   border: 1px solid #fff;
   margin-right: 5px;
-  
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  margin: 1px;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.search-form__label-text:not(:active):focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__checkbox-list {
@@ -140,7 +163,14 @@ width: 100%;
   border-bottom: 1px solid #fff;
   border-left: transparent;
   appearance: none;
+  font-size: inherit;
+  font-family: inherit;
 }
+
+.search-form__textfield:active {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff; 
+}  
 
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.70);
@@ -159,6 +189,41 @@ width: 100%;
   outline: none;
 }
 
+.button {
+  font-family: 'Fira Sans Condensed', 'Sans-serif';
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+button:focus-visible {
+  display: block;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
 
 .title {
   font-family: 'Oswald', 'san-serif';
@@ -182,18 +247,40 @@ width: 100%;
 }
 
 .content__list {
-  padding-right: 7px;
+  padding-right: px;
+}
+
+.content__list-item {
+  padding: 3px 3px ;
+}
+
+.content__list:not(last-child) {
+  margin-bottom: 30px;
 }
 
 .content__list-container {
   width: 399px;
   height: 298px;
   overflow-y: scroll;
+  position: relative;
 }
 
 .content__card-link {
   text-decoration: none;
 }
+
+.content__list-item:active {
+  background-color: #545050;
+
+}
+
+.content__card-link:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* .content__card-link_current {
+  outline: 1px solid #fff;
+} */
 
 .content__list-item:not(:last-child) {
   margin-bottom: 32px;
@@ -244,6 +331,11 @@ width: 100%;
 
 }
 
+.more-button {
+  width: 390px;
+  height: 34px;
+  padding-bottom: 1px;
+}
 
 
 /* Кастомный скроллбар */
