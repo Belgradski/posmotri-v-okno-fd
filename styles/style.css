@@ -10,15 +10,16 @@ html {
 
 .page {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  inline-size: 1200px;
+  inline-size: 1140px;
   block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding-bottom: 190px;
 }
 
 h1,
@@ -80,6 +81,7 @@ ol {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  height: 386px;
 }
 
 .search-form {
@@ -100,6 +102,8 @@ ol {
 }
 
 .search-form__fieldset-title {
+  display: flex;
+  align-items: end;
   font-family: "Fira Sans Condensed", "Sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -226,7 +230,7 @@ button:focus-visible {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  
 }
 
 .content__details {
@@ -245,7 +249,7 @@ button:focus-visible {
 }
 
 .content__list:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .content__list-container {
