@@ -19,7 +19,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  
+
 }
 
 h1,
@@ -153,7 +153,7 @@ ol {
 
 .search-form__fieldset {
   border: transparent;
-  
+
 }
 
 .search-form__checkbox-list {
@@ -228,7 +228,7 @@ ol {
 
 .search-form__submit-button {
   min-width: 194px;
-  
+
 }
 
 .title {
@@ -304,7 +304,7 @@ ol {
 .content__video-card-description-container {
   max-width: 196px;
   width: 100%;
-  
+
 }
 
 .content__video-card-title {
