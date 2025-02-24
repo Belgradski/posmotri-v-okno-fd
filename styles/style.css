@@ -19,7 +19,6 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-
 }
 
 h1,
@@ -101,7 +100,6 @@ ol {
   background-color: transparent;
   align-items: center;
   cursor: pointer;
-  margin-top: 3px;
 }
 
 .search-form__fieldset-title {
@@ -113,6 +111,7 @@ ol {
   font-size: 18px;
   line-height: 22px;
   color: #fff;
+  margin: 3px 0;
 }
 
 .search-form__pseudo-checkbox {
@@ -126,7 +125,7 @@ ol {
   align-items: center;
 }
 
-.search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
   width: 15px;
@@ -146,18 +145,13 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  /* padding-left: 8px; */
+  margin: 3px 0;
   justify-content: space-between;
   gap: 15px;
 }
 
 .search-form__fieldset {
   border: transparent;
-
-}
-
-.search-form__checkbox-list {
-  margin: 3px 0;
 }
 
 .search-form__textfield {
@@ -228,7 +222,6 @@ ol {
 
 .search-form__submit-button {
   min-width: 194px;
-
 }
 
 .title {
@@ -237,7 +230,6 @@ ol {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-
 }
 
 .content__details {
@@ -275,8 +267,13 @@ ol {
   background-color: #545050;
 }
 
-.content__list-item:hover {
+.content__card-link_current {
+  background: #545050;
+}
+
+.content__card-link:hover {
   text-decoration: underline;
+  color: #fff;
 }
 
 .content__card-link:focus:not(:focus-visible) {
@@ -304,7 +301,6 @@ ol {
 .content__video-card-description-container {
   max-width: 196px;
   width: 100%;
-
 }
 
 .content__video-card-title {
@@ -349,3 +345,5 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
 }
+
+/* Валерия спасибо за ревью и хорошего Вам дня :) */
